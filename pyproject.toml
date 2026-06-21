@@ -8,6 +8,7 @@ dependencies = [
     "gitsource>=0.0.5",
     "jupyter>=1.1.1",
     "minsearch>=0.1.1",
+    "ollama>=0.6.2",
     "openai>=2.43.0",
     "python-dotenv>=1.2.2",
     "requests>=2.34.2",

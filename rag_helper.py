@@ -23,7 +23,6 @@ class RAGBase:
         llm_client,
         instructions=INSTRUCTIONS,
         prompt_template=PROMPT_TEMPLATE,
-        
         model='gpt-5.4-mini'
     ):
         self.index = index
@@ -71,8 +70,7 @@ class RAGBase:
             input=input_messages
         )
 
-        return response.output_text
-
+        return response
     def rag(self, query):
         search_results = self.search(query)
         prompt = self.build_prompt(query, search_results)
